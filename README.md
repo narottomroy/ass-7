@@ -34,3 +34,69 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+src/
+├── app/
+│ ├── page.tsx
+│ ├── loading.tsx
+│ ├── not-found.tsx
+│ │
+│ ├── [slug]/
+│ │ ├── page.tsx
+│ │ └── loading.tsx
+│ │
+│ ├── product/
+│ │ └── [slug]/
+│ │ └── page.tsx
+│ │
+│ ├── signin/
+│ │ └── page.tsx
+│ │
+│ ├── signup/
+│ │ └── page.tsx
+│ │
+│ ├── profile/
+│ │ └── page.tsx
+│ │
+│ ├── update-profile/
+│ │ └── page.tsx
+│ │
+│ └── api/
+│ └── auth/
+│ └── [...all]/
+│ └── route.ts
+│
+├── components/
+│ ├── shared/
+│ │ ├── Navbar.tsx
+│ │ ├── NavLink.tsx
+│ │ ├── PriceTicker.tsx
+│ │ └── Footer.tsx
+│ │
+│ ├── home/
+│ │ ├── Hero.tsx
+│ │ ├── RisingProducts.tsx
+│ │ ├── FallingProducts.tsx
+│ │ ├── AllProducts.tsx
+│ │ └── ProductCard.tsx
+│ │
+│ ├── category/
+│ │ └── CategoryProducts.tsx
+│ │
+│ └── auth/
+│ ├── SignInForm.tsx
+│ └── SignUpForm.tsx
+│
+├── lib/
+│ ├── getProducts.ts
+│ ├── getCategories.ts
+│ ├── getProduct.ts
+│ ├── getCategory.ts
+│ ├── auth.ts
+│ └── auth-client.ts
+│
+├── types/
+│ ├── product.ts
+│ └── category.ts
+│
+└── proxy.ts
